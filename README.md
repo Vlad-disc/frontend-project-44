@@ -3,4 +3,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ee028627001c9de87d60/maintainability)](https://codeclimate.com/github/Vlad-disc/frontend-project-44/maintainability)
 
-[![asciicast](https://asciinema.org/a/perPSeKfuxaF2nWMyXozK1LIj.svg)](https://asciinema.org/a/perPSeKfuxaF2nWMyXozK1LIj)
+[![asciicast](https://asciinema.org/a/IzhTJJ824kNWETgczX0CXTOIh.svg)](https://asciinema.org/a/IzhTJJ824kNWETgczX0CXTOIh)

@@ -1,16 +1,11 @@
 import readlineSync from 'readline-sync';
-
-console.log('Welcome to the Brain Games!');
-
-const name = readlineSync.question('May I have your name? ');
-
-console.log(`Hello ${name}!`);
+import { greetingsUser } from '../../src/index.js'
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-
 // функция по нахождения четного числа
 const maxNum = 20;
+const userName = greetingsUser();
 let answerPoint = 0;
 let functionRep = 0;
 
@@ -33,11 +28,11 @@ const evenQuestion = () => {
             console.log('Correct!');
             answerPoint += 1;
         } else if (answer !== 'yes' || answer !== 'no') {
-            console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${name}!`);
+            return console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${userName}!`); 
         }
 
         if (answerPoint === 3) {
-            console.log(`Congratulations, ${name}!`);
+            console.log(`Congratulations, ${userName}!`);
         } else {
             evenQuestion();
         }
