@@ -8,12 +8,12 @@ const greetingsUser = () => {
     return name;
 }
 
-const maxNumOne = 15;
-const maxNumTwo = 10;
+const maxNumOne = 20;
+const maxNumTwo = 15;
 const mathSymbols = ['+', '-', '*'];
 
-const getRandomNumOne = () => Math.floor(Math.random() * (maxNumOne + 1));
-const getRandomNumTwo = () => Math.floor(Math.random() * (maxNumTwo + 1));
+const getRandomNumOne = () => Math.floor(Math.random() * maxNumOne) + 1;
+const getRandomNumTwo = () => Math.floor(Math.random() * maxNumTwo) + 1;
 const getMathSymbols = () => mathSymbols[(Math.floor(Math.random() * mathSymbols.length))];
 
 export { greetingsUser, getRandomNumOne, getRandomNumTwo, getMathSymbols };

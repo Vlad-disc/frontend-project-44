@@ -11,6 +11,10 @@ let functionRep = 0;
 const calcQuestion = () => {
     if (functionRep < 3) {
 
+        const randomNumOne = getRandomNumOne();
+        const randomNumTwo = getRandomNumTwo();
+        const randomMathSymbol = getMathSymbols();
+
         const calculationSymbol = () => {
             if (randomMathSymbol === '+') {
                 return randomNumOne + randomNumTwo;
@@ -21,27 +25,24 @@ const calcQuestion = () => {
             }
         };
 
-        const randomNumOne = getRandomNumOne();
-        const randomNumTwo = getRandomNumTwo();
-        const randomMathSymbol = getMathSymbols();
-        const currectAnswer = calculationSymbol();
-
+        const calcAnswer = calculationSymbol();
 
         console.log(`Question: ${randomNumOne} ${randomMathSymbol} ${randomNumTwo}`);
 
         const answerUser = readlineSync.question('Your answer: ');
 
-        if (Number(answerUser) === currectAnswer) {
+        if (Number(answerUser) === calcAnswer) {
             console.log('Correct!');
             answerPoint += 1;
-        } else if (Number(answerUser) !== currectAnswer) {
-            return console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${currectAnswer}'. Let's try again, ${userName}!`); 
+        } else if (Number(answerUser) !== calcAnswer) {
+            return console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${calcAnswer}'. Let's try again, ${userName}!`); 
         }
 
 
         if (answerPoint === 3) {
             console.log(`Congratulations, ${userName}!`);
         } else {
+            functionRep += 1;
             calcQuestion();
         }
     } 
