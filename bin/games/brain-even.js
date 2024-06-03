@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import { greetingsUser, getRandomNumOne } from '../../src/index.js';
 
