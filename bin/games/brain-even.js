@@ -18,6 +18,7 @@ const evenQuestion = () => {
 
     const answerUser = readlineSync.question('Your answer: ');
     if (answerUser === evenAnswer) {
+      console.log('Correct!');
       answerPoint += 1;
     } else if (answerUser !== 'yes' || answerUser !== 'no') {
       return console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${evenAnswer}'. Let's try again, ${userName}!`);
