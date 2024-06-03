@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { greetingsUser, getRandomNumOne, getRandomNumTwo } from '../../src/index.js';
+import { greetingsUser, getRandomNumOne, getRandomNumTwo } from '../src/index.js';
 
 const userName = greetingsUser();
 let answerPoint = 0;

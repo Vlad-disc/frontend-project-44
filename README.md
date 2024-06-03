@@ -3,6 +3,9 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ee028627001c9de87d60/maintainability)](https://codeclimate.com/github/Vlad-disc/frontend-project-44/maintainability)
 
+
+<h1>Проект "Игры разума"</h1>
+
 [![asciicast](https://asciinema.org/a/UBOUegYWBZFkEYcje6X97ySzd.svg)](https://asciinema.org/a/UBOUegYWBZFkEYcje6X97ySzd)
 
 [![asciicast](https://asciinema.org/a/25lwAICfQvjO9mVOzSzBowRG8.svg)](https://asciinema.org/a/25lwAICfQvjO9mVOzSzBowRG8)
