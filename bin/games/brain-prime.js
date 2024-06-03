@@ -16,7 +16,7 @@ const primeQuestion = () => {
         if (randomNum < 2) {
             return 'no'
         }
-        
+
         const sqrtNum = Math.floor(Math.sqrt(randomNum)); 
         for (let i = 2; i <= sqrtNum; i += 1) {
             if (randomNum % i === 0) {
