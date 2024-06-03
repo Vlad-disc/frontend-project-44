@@ -14,6 +14,11 @@ npm-debug.log
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
-/node_modules/
+node_modules/
+brain-calc.cast
+brain-even.cast
+brain-gcd.cast
+brain-progression.cast
+brain-prime.cast
 *.log
 coverage
