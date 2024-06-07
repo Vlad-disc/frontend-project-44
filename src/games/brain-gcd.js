@@ -3,15 +3,17 @@ import { runGame, getRandomNumOne, getRandomNumTwo } from '../index.js';
 const getRound = () => {
   const numOne = getRandomNumOne();
   const numTwo = getRandomNumTwo();
-  const getAnswer = (numOne, numTwo) => {
-    while (numOne !== numTwo) {
-      if (numOne > numTwo) {
-        numOne -= numTwo;
+  const getAnswer = (firstNum, secondNum) => {
+    let a = firstNum;
+    let b = secondNum;
+    while (a !== b) {
+      if (a > b) {
+        a -= b;
       } else {
-        numTwo -= numOne;
+        b -= a;
       }
     }
-    return numOne;
+    return a;
   };
   const gcdAnswer = getAnswer(numOne, numTwo);
   const question = `${numOne} ${numTwo}`;
@@ -19,8 +21,8 @@ const getRound = () => {
 };
 
 const gcdGame = () => {
-  const opsions = 'Find the greatest common divisor of given numbers.';
-  runGame(opsions, getRound);
+  const options = 'Find the greatest common divisor of given numbers.';
+  runGame(options, getRound);
 };
 
 export default gcdGame;

@@ -9,8 +9,8 @@ const getRound = () => {
 };
 
 const evenGame = () => {
-  const opsions = 'Answer "yes" if the number is even, otherwise answer "no".';
-  runGame(opsions, getRound);
+  const options = 'Answer "yes" if the number is even, otherwise answer "no".';
+  runGame(options, getRound);
 };
 
 export default evenGame;

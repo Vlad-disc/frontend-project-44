@@ -7,11 +7,11 @@ const greetingsUser = () => {
   return name;
 };
 
-const runGame = (opsions, getRound) => {
+const runGame = (options, getRound) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(opsions);
+  console.log(options);
   const answerPoint = 3;
   for (let i = 0; i < answerPoint; i += 1) {
     const [question, answerCalc] = getRound();

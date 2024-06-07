@@ -13,6 +13,8 @@ const getRound = () => {
       return numOne - numTwo;
     } if (mathSymbols === '*') {
       return numOne * numTwo;
+    } else {
+      return null;
     }
   };
   const calcAnswer = calculationSymbol();
@@ -21,8 +23,8 @@ const getRound = () => {
 };
 
 const calcGame = () => {
-  const opsions = 'What is the result of the expression?';
-  runGame(opsions, getRound);
+  const options = 'What is the result of the expression?';
+  runGame(options, getRound);
 };
 
 export default calcGame;

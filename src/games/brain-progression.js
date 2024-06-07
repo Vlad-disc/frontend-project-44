@@ -16,8 +16,8 @@ const getRound = () => {
 };
 
 const progressionGame = () => {
-  const opsions = 'What number is missing in the progression?';
-  runGame(opsions, getRound);
+  const options = 'What number is missing in the progression?';
+  runGame(options, getRound);
 };
 
 export default progressionGame;
