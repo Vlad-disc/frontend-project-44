@@ -1,9 +1,11 @@
 import { runGame, getRandomNumOne } from '../index.js';
 
+const isEven = (num) => num % 2 === 0;
+
+
 const getRound = () => {
   const randomNum = getRandomNumOne();
-  const evenNum = randomNum % 2 === 0;
-  const evenAnswer = evenNum ? 'yes' : 'no';
+  const evenAnswer = isEven(randomNum) ? 'yes' : 'no';
   const question = `${randomNum}`;
   return [question, evenAnswer];
 };

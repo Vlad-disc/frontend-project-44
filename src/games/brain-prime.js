@@ -1,20 +1,21 @@
 import { runGame, getRandomNumOne } from '../index.js';
 
-const getRound = () => {
-  const randomNum = getRandomNumOne();
-  const isPrime = () => {
-    if (randomNum < 2) {
+const isPrime = (num) => {
+  if (num < 2) {
+    return 'no';
+  }
+  const sqrtNum = Math.floor(Math.sqrt(num));
+  for (let i = 2; i <= sqrtNum; i += 1) {
+    if (num % i === 0) {
       return 'no';
     }
-    const sqrtNum = Math.floor(Math.sqrt(randomNum));
-    for (let i = 2; i <= sqrtNum; i += 1) {
-      if (randomNum % i === 0) {
-        return 'no';
-      }
-    }
-    return 'yes';
-  };
-  const primeAnswer = isPrime();
+  }
+  return 'yes';
+};
+
+const getRound = () => {
+  const randomNum = getRandomNumOne();
+  const primeAnswer = isPrime(randomNum);
   const question = `${randomNum}`;
   return [question, primeAnswer];
 };
