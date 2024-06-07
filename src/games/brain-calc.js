@@ -1,7 +1,9 @@
-import { runGame, getRandomNumOne, getRandomNumTwo, getMathSymbols } from '../index.js';
+import {
+  runGame, getRandomNumOne, getRandomNumTwo, getMathSymbols,
+} from '../index.js';
 
 const getRound = () => {
-  const  numOne = getRandomNumOne();
+  const numOne = getRandomNumOne();
   const numTwo = getRandomNumTwo();
   const mathSymbols = getMathSymbols();
   const calculationSymbol = () => {

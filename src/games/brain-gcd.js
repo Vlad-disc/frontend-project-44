@@ -1,8 +1,8 @@
 import { runGame, getRandomNumOne, getRandomNumTwo } from '../index.js';
 
 const getRound = () => {
-  let numOne = getRandomNumOne();
-  let numTwo = getRandomNumTwo();
+  const numOne = getRandomNumOne();
+  const numTwo = getRandomNumTwo();
   const getAnswer = (numOne, numTwo) => {
     while (numOne !== numTwo) {
       if (numOne > numTwo) {

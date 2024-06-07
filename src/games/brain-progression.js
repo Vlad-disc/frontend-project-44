@@ -11,7 +11,7 @@ const getRound = () => {
   const randomNum = Math.floor(Math.random() * progressionArray.length);
   const correctAnswer = progressionArray[randomNum];
   progressionArray[randomNum] = '..';
-  const question = progressionArray.join(' ');;
+  const question = progressionArray.join(' ');
   return [question, correctAnswer];
 };
 

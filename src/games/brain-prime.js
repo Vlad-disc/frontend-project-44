@@ -4,13 +4,13 @@ const getRound = () => {
   const randomNum = getRandomNumOne();
   const isPrime = () => {
     if (randomNum < 2) {
-        return 'no'
+      return 'no';
     }
-    const sqrtNum = Math.floor(Math.sqrt(randomNum)); 
+    const sqrtNum = Math.floor(Math.sqrt(randomNum));
     for (let i = 2; i <= sqrtNum; i += 1) {
-        if (randomNum % i === 0) {
-            return 'no';
-        }
+      if (randomNum % i === 0) {
+        return 'no';
+      }
     }
     return 'yes';
   };
