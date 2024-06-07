@@ -13,9 +13,8 @@ const getRound = () => {
       return numOne - numTwo;
     } if (mathSymbols === '*') {
       return numOne * numTwo;
-    } else {
-      return null;
-    }
+    } 
+    return null;
   };
   const calcAnswer = calculationSymbol();
   const question = `${numOne} ${mathSymbols} ${numTwo}`;
