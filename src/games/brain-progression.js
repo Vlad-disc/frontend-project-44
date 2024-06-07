@@ -6,7 +6,7 @@ const getProgression = (num, step, length) => {
     progressionArray.push(num + i);
   }
   return progressionArray;
-}
+};
 
 const getRound = () => {
   const numArray = getRandomNumOne();

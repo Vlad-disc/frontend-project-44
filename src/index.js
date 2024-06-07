@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import greetingsUser from './cli.js'
+import greetingsUser from './cli.js';
 
 const runGame = (options, getRound) => {
   const userName = greetingsUser();

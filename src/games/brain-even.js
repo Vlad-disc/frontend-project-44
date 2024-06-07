@@ -2,7 +2,6 @@ import { runGame, getRandomNumOne } from '../index.js';
 
 const isEven = (num) => num % 2 === 0;
 
-
 const getRound = () => {
   const randomNum = getRandomNumOne();
   const evenAnswer = isEven(randomNum) ? 'yes' : 'no';
